@@ -95,10 +95,10 @@
 // promise
 
 let promise= new Promise(function(resolve,reject){
-    let zingar="avaliable";
-    if(zingar === "avaliable"){
-   setInterval(() => {
-    resolve("yes")
+    let name2="abdul moiz";
+    if(name2 === "abdul moiz"){
+   setInterval(function()  {
+    resolve("abdul moiz")
    }, 3000);
 }   
 else{
@@ -123,20 +123,20 @@ console.log("Error => "+error);
 
 
 
-let firebases= new Promise(function(resolve,reject){
-    firebase.database().ref("users").on("child_added",function(data){
-        if(data.val()){
-        resolve(data.val());
-        }
-        else{
-            reject("something went wrong")
-        }
-    })    
-})
+// let firebases= new Promise(function(resolve,reject){
+//     firebase.database().ref("users").on("child_added",function(data){
+//         if(data.val()){
+//         resolve(data.val());
+//         }
+//         else{
+//             reject("something went wrong")
+//         }
+//     })    
+// })
 
-firebases.then(function(data){
-    console.log("Resolve "+data)
-})
-.catch(function(wrong){
-    console.log("Error "+wrong)
-})
+// firebases.then(function(data){
+//     console.log("Resolve "+data)
+// })
+// .catch(function(wrong){
+//     console.log("Error "+wrong)
+// })
