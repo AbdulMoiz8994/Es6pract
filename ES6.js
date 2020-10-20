@@ -106,18 +106,23 @@ console.log(arr3);
 // console.log("abdul malik");
 
 
-let promise= new Promise(function (resolve,reject){
-    let a=10;
-   if(a===10 && a<=10){
-       resolve("Yes this is true")
-   }
-   else{
-       reject("No this is false")
-   }
-})
-promise.then(function (data){
-      console.log(data)
-})
-.catch(function (error){
-    console.log(error)
-})
+// let promise= new Promise(function (resolve,reject){
+//     let a=10;
+//    if(a===10 && a<=10){
+//        resolve("Yes this is true")
+//    }
+//    else{
+//        reject("No this is false")
+//    }
+// })
+// promise.then(function (data){
+//       console.log(data)
+// })
+// .catch(function (error){
+//     console.log(error)
+// })
+
+
+// let food= (a,b) =>  `hello ${a} and ${b} ` // this is retrun method and we use this in one line we use this template literlas
+
+// console.log(food("abdul moiz","faizan"));
