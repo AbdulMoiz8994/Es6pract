@@ -10,6 +10,8 @@
 // // const js='javascript moiz';
 // // console.log(js.split(','));
 // ES6
+
+//template literals
 // const firstName= "abdul";
 // const lastName="moiz";
 
@@ -94,24 +96,24 @@
 
 // promise
 
-let promise= new Promise(function(resolve,reject){
-    let name2="abdul moiz";
-    if(name2 === "abdul moiz"){
-   setInterval(function()  {
-    resolve("abdul moiz")
-   }, 3000);
-}   
-else{
-       reject("no")
-   }
-})
-console.log(promise);
-promise.then(function(ans){
-console.log("Resolve => "+ans);
-})
-.catch(function(error){
-console.log("Error => "+error);
-})
+// let promise= new Promise(function(resolve,reject){
+//     let name2="abdul moiz";
+//     if(name2 === "abdul moiz"){
+//    setInterval(function()  {
+//     resolve("abdul moiz")
+//    }, 3000);
+// }   
+// else{
+//        reject("no")
+//    }
+// })
+// console.log(promise);
+// promise.then(function(ans){
+// console.log("Resolve => "+ans);
+// })
+// .catch(function(error){
+// console.log("Error => "+error);
+// })
 //agar promise result resolve ho jayee ga tou .then and ayeee ga 
 // or agar reject hoga tou .catch ma ayee ga 
 
@@ -140,3 +142,63 @@ console.log("Error => "+error);
 // .catch(function(wrong){
 //     console.log("Error "+wrong)
 // })
+
+//  Array Destructure
+
+let arr1=["abdul moiz","abdul rafay","faizan"];
+
+// this is normally we get the indexes value
+// let name1=arr1[0];
+// console.log(name1);
+let [name1,name2,name3]=arr1;
+// ya es6 ka array destrucutre ha or is ma sari values a gai ha sequence vice
+// name1 ma 0 index, name2 ma 1 index is tarha ya jata rahe ga 
+// object destructing ma properties or array ma index sa tarhet kar raha ha
+
+console.log(name3);
+
+
+
+//function Expresssions
+// function ko hum variable ma pass karwa sakthye ha
+
+// phala hum function foo(){
+
+// }
+
+//  lakin ab
+
+let foo = function(){
+    console.log("hello world")
+}
+// Arrow function/ fat arrow
+// agar ak parameter ha tou roundbreakets() banana ki koi zaroorat nahi ha,
+// agar ak sa ziada ha tou tou () ya breakest la gayee ga
+// This is single para meter
+
+
+// let foo1= name =>{
+//     console.log(`hello ${name}`)
+// }
+// foo();
+// foo1("moiz");
+
+
+// now we will pass double parameters so we will use  this brakest()
+// let foo1=(a,b) => {
+//  console.log(`hello ${a} and ${b}`)
+// }
+// foo1("abdul moiz","abdul rafay");
+
+// retrun method
+// let foo1= a =>{
+//     return "moiz attari"
+// }
+// console.log(foo1());
+
+// // agar humyee koi cheez retrun karwani ho directly tou hum retrun ka keyworkd na likyee of {} ya breakest bi nahi lagyee 
+// // jasa below
+// // This is totlay retrun directly
+// let foo2= (ar1,ar2) => `${ar1} and ${ar2}`;
+
+// console.log(foo2("moiz","rizwan"));
