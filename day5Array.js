@@ -42,6 +42,7 @@
 // //ES6 na humye new method dia ha easy 
 
 // let {name,email,institue}=obj
+
 // //is obj is ander jo bi property ho gi  istarha variable ki tarha  declare kar deyee ga
 // //is ma sari properties nikal kar sari values ak varibale ma declare kar di ha 
 
@@ -202,3 +203,7 @@ let foo = function(){
 // let foo2= (ar1,ar2) => `${ar1} and ${ar2}`;
 
 // console.log(foo2("moiz","rizwan"));
+
+// alert("moiz");
+
+
