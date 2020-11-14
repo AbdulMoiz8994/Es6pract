@@ -518,24 +518,52 @@ min-width: 40px !important;
 
 
 
-const anyFunction=() =>{
-  return Math.floor(Math.random() * 10)% 2 === 0 ? true : false; 
+// const anyFunction=() =>{
+//   return Math.floor(Math.random() * 10)% 2 === 0 ? true : false; 
+// }
+
+// const resolveFunction= () =>{console.log("Success Resolve Function")};
+// const rejectFunction=() =>{console.log("Failure Reject Function")};
+
+// const result= new Promise((resolve,reject) =>{
+//      setTimeout(() =>{anyFunction() ? resolve() : reject() },1000) 
+// })
+
+function data(){
+  const promise= new Promise((resolve, reject) =>{
+
+  setTimeout(() =>{
+    data() ?   resolve("data Successful")  : reject("data Not Succssful") 
+  },1000)
+
+  })
+  // console.log(promise)
+  return promise
 }
 
-const resolveFunction= () =>{console.log("Success Resolve Function")};
-const rejectFunction=() =>{console.log("Failure Reject Function")};
 
-const result= new Promise((resolve,reject) =>{
-     setTimeout(() =>{anyFunction() ? resolve() : reject() },1000) 
-})
-
-const apt_data= async() => {
-  let data= await anyFunction()
-  console.log(data, "succesful")
+const api_data=async () => {
+try {
+  let data1= await data();
+  console.log(data1);  
 }
-apt_data();
+catch(error){
+    console.log(error)
 
+}
+}
 
+api_data();
+console.log("this is last line for async")
+// result.then(function(){
+//      resolveFunction();
+//      return 2
+// })
+// .then( function(val){
+//   console.log(val)
+// })
+// .catch(rejectFunction)
+// console.log("Thi is end of promise")
 
 // function callback(){
 //   setTimeout(() =>{
