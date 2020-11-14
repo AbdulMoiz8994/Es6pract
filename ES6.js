@@ -230,14 +230,14 @@ console.log (foo("abdul"));
 // console.log(arr2);
 // we can update the data via map
 
-var ar1=[{name: "abdul moiz attari"},{name: "abdul moiz only"}];
+// var ar1=[{name: "abdul moiz attari"},{name: "abdul moiz only"}];
 
-let array1=ar1.map((a) => {
-    return (
-        a.name
-    )
-})
-console.log(array1);
+// let array1=ar1.map((a) => {
+//     return (
+//         a.name
+//     )
+// })
+// console.log(array1);
 
 
 
@@ -313,21 +313,250 @@ console.log(array1);
 
 // we can merge two classes eachother and also property
 
-class Student{
-    constructor (name,id){
-      this.name=name
-      this.id=id
-    }
-}
-class School extends Student {
-    constructor(name,id,school){
-        super(name,id)
-        this.school=school
-    }
-}
-let student1= new School("moiz","0099","salani")
-console.log(student1);
+// class Student{
+//     constructor (name,id){
+//       this.name=name
+//       this.id=id
+//     }
+// }
+// class School extends Student {
+//     constructor(name,id,school){
+//         super(name,id)
+//         this.school=school
+//     }
+// }
+// let student1= new School("moiz","0099","salani")
+// console.log(student1);
 
-alert("moiz\n khan");
+// alert("moiz\n khan");
 
-alert("moiz "+ "khanzada");
+// alert("moiz "+ "khanzada");
+
+
+
+
+
+// const number =[1,-1,2,3];
+// // a=0, i=1, =>a=1;
+// //a=1,i=-1 => a=0;
+// //a=0,i=2,a=2;
+// //a=2,i=3,a=5;
+
+// const result=number.reduce((acc,item) =>  (acc += item),0);
+
+// console.log(result);
+
+
+// const number1=[1,10,11,12];
+
+
+// const result=number1.reduce((initial, item) =>(initial +=item),0);
+// console.log(result); 
+
+
+// let var1=prompt("please type number");
+// let sign=prompt("please type sign");
+// let var2=prompt("please type number");
+// console.log(var1+sign+var2);
+
+// if(sign === "+"){
+//     alert((+var1)+(+var2))
+// }
+// else if(sign === "-"){
+//     alert(var1-var2)
+// }
+// else if(sign === "/"){
+//     alert(var1/var2)
+// }
+// else if(sign === "*"){
+//     alert(var1*var2)
+// }
+// else if(sign === "%"){
+//     alert(var1/var2*100 +"%")
+
+// }
+
+
+
+
+
+/* border-radius: 5px 10px 20px 30px; */
+/* visibility: hiiden; */
+
+/* display: inline */
+/* display: inline-block all the elements comes in in one line if the style is given  */
+
+
+/* padding */
+/* jo hum na div banaya ha uska borders or text ka darmyan hum space create kartee ha */
+
+
+/*   border: 1px solid black;
+ */
+/* we can give margin all sides from one method */
+/* margin: 10px(top) 5px(right) 10px(bottom) 5px(left)  */
+ /* margin: 10px auto 10px auto; same*/
+/* margin: 0 auto same */
+
+/* 
+min-width: 40px !important;
+ max-width: 1000px; */
+
+
+
+  /* text-shadow: 0px 0px 5px gray; */
+
+  /* text-decoration: underline; */
+
+
+/* div.header:first-line{
+   text-transform: capitalize;
+}  */
+
+/* .text:hover{
+  background-color: aqua;
+  border: lightskyblue;
+}
+.text:focus{
+  background-color: lightslategrey;
+}
+.button:hover{
+  background-color: mediumblue;
+}
+.button:active{
+  background-color: mediumspringgreen;
+} */
+
+
+/* 
+.link:link {
+ color: green !important;
+ text-decoration: none !important;
+}
+.link:visited{
+  color: aqua;
+} */
+
+
+
+
+// console.log("First Name")
+// const date="what is time going"
+
+// setTimeout(function(){
+//  console.log(date)
+
+// },1000)
+// // first_Name()
+
+// console.log("this is last line")
+
+
+// console.log("This is first line");
+
+// const msg="This is  second line";
+
+// setTimeout(function(){
+//   console.log(msg)
+// },1000)
+
+// console.log("This is third line");
+
+// console.log("This is starting Point");
+
+// function breakFast(){
+//    setTimeout(function (){
+//         console.log("Break Fast End")
+//    },100)
+// }
+// function morining(){
+//   console.log("Break Fast start")  
+// }
+// breakFast();
+// morining();
+// console.log("This is end line")
+
+
+// function PrintValue(msg,value){
+//    value(msg)
+// }
+
+// function value(msg){
+//     alert(msg)
+// }
+
+// PrintValue("Hello world Msg",value);
+
+
+ 
+// const promise= new Promise(function(resolve, reject){
+//   console.log("this is promise")
+//   setTimeout(() =>{
+//     reject()
+//   },1000)
+   
+// })
+// promise.then(function(){
+// console.log("Hey this is successful msg")
+// })
+// .catch(function(){
+// console.log("hey we lose and this is error")
+// })
+
+// function success(){
+//   console.log("Success")
+// }
+
+// function failure(){
+//    console.log("Failure")
+// }
+
+// function checkUserPro(userInput,success,failure){
+//   userInput === true ? success() : failure()
+// }
+// checkUserPro(true ,success,failure);
+
+
+
+const anyFunction=() =>{
+  return Math.floor(Math.random() * 10)% 2 === 0 ? true : false; 
+}
+
+const resolveFunction= () =>{console.log("Success Resolve Function")};
+const rejectFunction=() =>{console.log("Failure Reject Function")};
+
+const result= new Promise((resolve,reject) =>{
+     setTimeout(() =>{anyFunction() ? resolve() : reject() },1000) 
+})
+
+const apt_data= async() => {
+  let data= await anyFunction()
+  console.log(data, "succesful")
+}
+apt_data();
+
+
+
+// function callback(){
+//   setTimeout(() =>{
+//     console.log("This is first call back 1")
+//   },200)
+// }
+// function callback2(){
+//   setTimeout(()=>{
+//    console.log("this is second call back 2")
+//   },100)
+// }
+
+// function func1(){
+//    callback()
+//    console.log("func1")  
+// }
+// func1()
+
+// function func2(){
+//   callback2()
+//   console.log("func2")
+// }
+// func2()
+

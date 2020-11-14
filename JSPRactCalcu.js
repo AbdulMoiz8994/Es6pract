@@ -42,12 +42,12 @@ for(var b=0; b<name.length;b++){
     
 // }
 
-let nub=["abdul moiz","zafar ali","malik","rafay","rizwan"];
-for (let d=0;d<nub.length;d++){
-    if(nub[d] === "malik"){
-        alert(nub[d] +" this is mailk")
-        break;
-    }
+// let nub=["abdul moiz","zafar ali","malik","rafay","rizwan"];
+// for (let d=0;d<nub.length;d++){
+//     if(nub[d] === "malik"){
+//         alert(nub[d] +" this is mailk")
+//         break;
+//     }
 
-}
+// }
 
